@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+	 <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<header class="head">
+	<p><img src="images/logo_01.png" alt=""></p>
+	<p>消息</p>
+	<p>+</p>
+</header>
+<section class="content">
+	<div class="search">
+		<i class="fa fa-search"></i>
+		<input type="text" placeholder="搜索">
+	</div>
+	<div id="app">
+		<div class="main" v-for="i in datas">
+			<div class="box">
+				<p><img :src="i.img" alt=""></p>
+				<p><span>{{i.content}}</span><span>{{i.friden}}</span></p>
+				<p><span>{{i.time}}</span><span :class="i.clas">{{i.num}}</span></p>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="foot">
+	<ul class="uls">
+		<li class="foot_color">
+			<i class="fa fa-comment-o"></i>
+			<span>消息</span>
+		</li>
+		<li>
+			<i class="fa fa-user-o"></i>
+			<span>联系人</span>
+		</li>
+		<li>
+			<i class="fa fa-star-o"></i>
+			<span>动态</span>
+		</li>
+	</ul>
+</footer>
+<script src="js/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+}
+.head{
+    width:100%;
+    height:.50rem;
+    position:relative;
+    line-height:.50rem;
+    background:#3da5fc;
+    text-align:center;
+    color:#fff;
+    p:nth-child(1){  
+      position:absolute;
+      top:10px;    
+      left:10px;
+      img{
+        width:30px;
+        height:30px;
+      }
+    }
+    p:nth-child(3){
+      position:absolute;
+      top:0px;
+      right:10px;
+      font-size:.2rem;
+    }
+}
+
+.content{
+  width:100%;
+  flex:1;
+  overflow-y:scroll;
+  .search{
+    width:95%;
+    height:.3rem;
+    background:#f3f3f3;
+    margin:8px auto;
+    input{
+      width:80%;
+      height:.28rem;
+      border:none;
+      outline:none;
+      background:#f3f3f3;
+      padding-left:5px;
+    }
+    i{
+      padding-left:10px;
+      color:#999;
+    }
+  }
+  .main{
+    width:100%;
+    .box{
+      display:flex;
+      position:relative;
+      padding:5px 10px 0px 10px;
+      border-bottom:1px solid #eee;
+      p:nth-child(1){
+        img{
+          width:50px;
+          height:50px;
+        }
+      }
+      p:nth-child(2),p:nth-child(3){
+        span{
+          display:block;
+        }
+      }
+      p:nth-child(2){
+        flex:1;
+         padding-left:8px;
+         span:nth-child(1){
+          font-size:16px;
+          font-weight:600;
+         }
+         span:nth-child(2){
+          font-size:14px;
+          color:#999;
+          padding-top:5px;
+         }
+      }
+      p:nth-child(3){
+        span:nth-child(1){
+          font-size:14px;
+          color:#999;
+        }
+        .news{
+          width:20px;
+          height:20px;
+          line-height:20px;
+          text-align:center;
+          color:#fff;
+          background:#f64d30;
+          border-radius:50%;
+          font-size:12px;
+          position:absolute;
+          bottom:10px;
+          right:10px;
+        }
+      }
+    }
+  }
+}
+.foot{
+  width:100%;
+  height:.45rem; 
+  border-top:1px solid #eee;
+  ul{
+      display: -webkit-flex;
+      li{
+          flex:1;
+          text-align:center;
+          color:#999;
+          padding-top:5px;
+          bos-sizing:border-box;
+          i{
+            font-size:.2rem;
+          }
+          span{
+            display:block;
+            font-size:12px;       
+          }
+        }
+      .foot_color{
+            color:#47b9ff;    
+      } 
+  }
+  
+}
+

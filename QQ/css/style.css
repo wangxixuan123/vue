@@ -1,0 +1,107 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.head {
+  width: 100%;
+  height: .50rem;
+  position: relative;
+  line-height: .50rem;
+  background: #3da5fc;
+  text-align: center;
+  color: #fff; }
+  .head p:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+    .head p:nth-child(1) img {
+      width: 30px;
+      height: 30px; }
+  .head p:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: .2rem; }
+
+.content {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll; }
+  .content .search {
+    width: 95%;
+    height: .3rem;
+    background: #f3f3f3;
+    margin: 8px auto; }
+    .content .search input {
+      width: 80%;
+      height: .28rem;
+      border: none;
+      outline: none;
+      background: #f3f3f3;
+      padding-left: 5px; }
+    .content .search i {
+      padding-left: 10px;
+      color: #999; }
+  .content .main {
+    width: 100%; }
+    .content .main .box {
+      display: flex;
+      position: relative;
+      padding: 5px 10px 0px 10px;
+      border-bottom: 1px solid #eee; }
+      .content .main .box p:nth-child(1) img {
+        width: 50px;
+        height: 50px; }
+      .content .main .box p:nth-child(2) span, .content .main .box p:nth-child(3) span {
+        display: block; }
+      .content .main .box p:nth-child(2) {
+        flex: 1;
+        padding-left: 8px; }
+        .content .main .box p:nth-child(2) span:nth-child(1) {
+          font-size: 16px;
+          font-weight: 600; }
+        .content .main .box p:nth-child(2) span:nth-child(2) {
+          font-size: 14px;
+          color: #999;
+          padding-top: 5px; }
+      .content .main .box p:nth-child(3) span:nth-child(1) {
+        font-size: 14px;
+        color: #999; }
+      .content .main .box p:nth-child(3) .news {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background: #f64d30;
+        border-radius: 50%;
+        font-size: 12px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px; }
+
+.foot {
+  width: 100%;
+  height: .45rem;
+  border-top: 1px solid #eee; }
+  .foot ul {
+    display: -webkit-flex; }
+    .foot ul li {
+      flex: 1;
+      text-align: center;
+      color: #999;
+      padding-top: 5px;
+      bos-sizing: border-box; }
+      .foot ul li i {
+        font-size: .2rem; }
+      .foot ul li span {
+        display: block;
+        font-size: 12px; }
+    .foot ul .foot_color {
+      color: #47b9ff; }
+
+/*# sourceMappingURL=style.css.map */
