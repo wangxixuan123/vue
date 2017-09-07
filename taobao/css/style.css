@@ -1,0 +1,159 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #f4f4f4; }
+
+.head {
+  width: 100%;
+  height: .45rem;
+  line-height: .45rem;
+  background: #ff6501;
+  display: flex;
+  color: #fff0cf; }
+  .head span:nth-child(1) {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+    box-sizing: border-box; }
+    .head span:nth-child(1) b {
+      font-size: 12px; }
+  .head span:nth-child(2) {
+    padding-right: 10px;
+    font-size: 12px; }
+
+.content {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll; }
+  .content .main {
+    margin-top: 10px;
+    width: 100%;
+    background: #fff; }
+    .content .main .top {
+      width: 100%;
+      height: .45rem;
+      line-height: .45rem;
+      border-bottom: 1px solid #eee;
+      display: flex; }
+      .content .main .top .yuan {
+        padding-left: 10px; }
+        .content .main .top .yuan span {
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          border-radius: 50%;
+          border: 1px solid #999; }
+      .content .main .top p:nth-child(2) {
+        padding-left: 10px; }
+        .content .main .top p:nth-child(2) span:nth-child(1) img {
+          width: 17px;
+          height: 17px; }
+        .content .main .top p:nth-child(2) span:nth-child(2) {
+          font-size: 14px; }
+        .content .main .top p:nth-child(2) i {
+          font-size: .18rem;
+          color: #999;
+          padding-left: 5px; }
+    .content .main .bottom {
+      width: 100%;
+      padding-top: 10px;
+      position: relative;
+      border-bottom: 1px solid #eee;
+      display: flex; }
+      .content .main .bottom .yuan {
+        padding: 18px 0px 0px 10px; }
+        .content .main .bottom .yuan span {
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          border-radius: 50%;
+          border: 1px solid #999; }
+      .content .main .bottom p:nth-child(2) {
+        padding-left: 10px; }
+        .content .main .bottom p:nth-child(2) img {
+          width: 50px;
+          height: 60px; }
+      .content .main .bottom .right {
+        padding-left: 5px; }
+        .content .main .bottom .right p:nth-child(1) {
+          padding-left: 8px; }
+          .content .main .bottom .right p:nth-child(1) span:nth-child(1) {
+            font-size: 14px; }
+          .content .main .bottom .right p:nth-child(1) i {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-size: .01rem; }
+        .content .main .bottom .right p:nth-child(2) {
+          padding-top: 5px; }
+          .content .main .bottom .right p:nth-child(2) span:nth-child(1) {
+            font-size: 14px;
+            color: #e8693c; }
+          .content .main .bottom .right p:nth-child(2) span:nth-child(2) {
+            font-size: 12px;
+            color: #999;
+            position: absolute;
+            right: 10px; }
+
+.foot {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #eee; }
+  .foot .foot_top {
+    height: .4rem;
+    line-height: .4rem;
+    display: flex;
+    justify-content: space-between; }
+    .foot .foot_top .yuan {
+      padding-left: 10px; }
+      .foot .foot_top .yuan b {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #999; }
+      .foot .foot_top .yuan span {
+        padding-left: 5px;
+        font-size: 14px; }
+    .foot .foot_top .foot_right {
+      display: flex; }
+      .foot .foot_top .foot_right p:nth-child(1) {
+        font-size: 14px;
+        padding-right: 5px; }
+        .foot .foot_top .foot_right p:nth-child(1) span {
+          font-size: 12px;
+          color: #ce551c; }
+      .foot .foot_top .foot_right p:nth-child(2) {
+        width: 65px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        background: #fc8801; }
+  .foot .foot_bottom {
+    height: .45rem;
+    border-top: 1px solid #eee; }
+    .foot .foot_bottom ul {
+      display: -webkit-flex; }
+      .foot .foot_bottom ul li {
+        flex: 1;
+        text-align: center;
+        color: #999;
+        padding-top: 5px;
+        bos-sizing: border-box; }
+        .foot .foot_bottom ul li i {
+          font-size: .2rem; }
+        .foot .foot_bottom ul li span {
+          display: block;
+          font-size: 12px; }
+      .foot .foot_bottom ul .foot_color i {
+        color: #ff6205; }
+      .foot .foot_bottom ul .foot_color span {
+        color: #c96a3e; }
+
+/*# sourceMappingURL=style.css.map */

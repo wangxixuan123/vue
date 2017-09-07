@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+	 <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<header class="head">
+	<span>购物车<b>(102)</b></span>
+	<span>编辑</span>
+</header>
+<section class="content">
+	<div id="app">
+		<div class="main"  v-for="i in datas">
+			<div class="top">
+				<p class="yuan"><span></span></p>
+				<p>
+					<span><img src="images/logo_01.png" alt=""></span>
+					<span>一说科技</span>
+					<i class="fa fa-angle-right"></i>
+				</p>
+			</div>
+			<div class="bottom">
+				<p class="yuan"><span></span></p>
+				<p><img :src="i.img" alt=""></p>
+				<div class="right">
+					<p><span>{{i.jieshao}}</span><i class="fa fa-file-o"></i></p>
+					<p><span>{{i.price}}</span><span>{{i.num}}</span></p>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="foot">
+	<div class="foot_top">
+		<p class="yuan"><b></b><span>全选</span></p>
+		<div class="foot_right">
+			<p>合计:<span>￥0</span></p>
+			<p>结算<span>(0)</span></p>
+		</div>
+	</div>
+	<div class="foot_bottom">
+		<ul class="uls">
+		<li>
+			<i class="fa fa-home"></i>
+			<span>首页</span>
+		</li>
+		<li>
+			<i class="fa fa-bullseye"></i>
+			<span>微淘</span>
+		</li>
+		<li>
+			<i class="fa fa-comment-o"></i>
+			<span>消息</span>
+		</li>
+		<li class="foot_color">
+			<i class="fa fa-truck"></i>
+			<span>购物车</span>
+		</li>
+		<li>
+			<i class="fa fa-user-o"></i>
+			<span>我的</span>
+		</li>
+	</ul>
+	</div>
+	
+</footer>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+            el: "#app",
+            data: {datas:""},
+            created: function(){
+                $.ajax({
+                    url: 'http://localhost:8989/taobao',
+                    type: 'POST'
+                }).then(function (result) {
+                    vue.datas = result;
+                    console.log(result)
+                }, function (err) {
+                    console.log(err)
+                })
+            }
+
+        })
+	// console.log(vue);
+</script>
+</body>
+</html>
