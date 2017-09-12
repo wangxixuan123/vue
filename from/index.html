@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+	<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+        .fade-enter,.fade-leave-to{
+            fadeOut: true
+        }
+        .fade-enter-active,.fade-leave-active{
+            animation: bounce 3s
+
+        }
+        .fade-enter-to,.fade-leave{
+            fadeIn: true;
+        }
+    </style>
+	<script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+	
+</div>
+<template id="tem">
+	<div>
+		<header class="head">
+			<span><</span>
+			<span>京东注册</span>
+		</header>
+		<transition name="fade">
+			<section v-if="state">
+				<div class="box">
+					<p><input type="text" v-model="message" placeholder="请输入手机验证码"></p>
+					<p><input type="password" v-model="pwd" placeholder="请设置密码"></p>
+				</div>
+			</section>
+	 	</transition>	
+	 	<div class="btn_box">
+			<button class="btn" @click="fn(message,pwd)">注册</button>
+			<button class="btn_02" @click="fun()">快点我</button>
+		</div>
+	</div>
+</template>
+	
+<script>
+	var vm=new Vue({
+		el:"#app",
+		template:"#tem",
+		data:{
+			state:true,
+			message:"",
+			pwd:""
+		},
+		methods:{
+			 fun(){
+			 	this.state = !this.state
+       		 },
+			fn(val1,val2){
+				console.log(val1,val2);
+			}
+		}
+	})
+
+</script>
+</body>
+</html>
