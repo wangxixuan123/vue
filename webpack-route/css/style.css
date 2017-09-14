@@ -1,0 +1,38 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.head {
+   }
+
+.content {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll; }
+
+
+.foot {
+  width: 100%;
+  height: .45rem;
+  border-top: 1px solid #eee; }
+  .foot ul {
+    display: -webkit-flex; }
+    .foot ul li {
+      flex: 1;
+      text-align: center;
+      color: #999;
+      padding-top: 5px;
+      bos-sizing: border-box; }
+      .foot ul li i {
+        font-size: .2rem; }
+      .foot ul li span {
+        display: block;
+        font-size: 12px; }
+    .foot ul .foot_color {
+      color: #47b9ff; }
+
+/*# sourceMappingURL=style.css.map */
