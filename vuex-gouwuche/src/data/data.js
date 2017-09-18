@@ -1,0 +1,27 @@
+module.exports={
+	json:[{
+		"img1":"../img/logo_07.png",
+		"title":"百草味",
+		"img2":"../img/logo_03.png",
+		"cont":"零食小吃糕点瑞士卷",
+		"plus":"+",
+		"jian":"-",
+		"count":"1"
+	},{
+		"img1":"../img/logo_07.png",
+		"title":"盼盼食品",
+		"img2":"../img/logo_05.png",
+		"cont":"零食小吃甜点达利园派",
+		"plus":"+",
+		"jian":"-",
+		"count":"1"
+	},{
+		"img1":"../img/logo_tianmao.png",
+		"title":"天猫",
+		"img2":"../img/logo_chu.png",
+		"cont":"学生宿舍单人床单",
+		"plus":"+",
+		"jian":"-",
+		"count":"1"
+	}]
+}
